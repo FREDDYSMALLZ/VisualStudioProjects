@@ -1,6 +1,6 @@
-﻿namespace IphoneCalculator
+﻿namespace ConsignmentShopUI
 {
-    partial class IphoneCalculator
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -30,18 +30,14 @@
         {
             this.SuspendLayout();
             // 
-            // IphoneCalculator
+            // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(20F, 37F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 779);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.MaximizeBox = false;
-            this.Name = "IphoneCalculator";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Calculator";
-            this.Load += new System.EventHandler(this.IphoneCalculator_Load);
+            this.ClientSize = new System.Drawing.Size(612, 908);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }

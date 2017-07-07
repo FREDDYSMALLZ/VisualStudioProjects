@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace IphoneCalculator
+namespace SimpleCalculatorUI
 {
-    public partial class IphoneCalculator : Form
+    public partial class Form1 : Form
     {
-        public IphoneCalculator()
+        public Form1()
         {
             InitializeComponent();
         }
 
-        private void IphoneCalculator_Load(object sender, EventArgs e)
+        private void button12_Click(object sender, EventArgs e)
         {
 
         }
