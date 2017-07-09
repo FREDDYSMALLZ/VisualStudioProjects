@@ -13,13 +13,13 @@ namespace Mistake3
     public class Mistake3
     {
         //Use a loop to compute the sum of squares
-        static void Main(string[] args)
+        public static void Main()
         {
 
             int sum = 0;   //Current value of the square and add
             int count = 1;
 
-            Console.WriteLine("Enter the number of squares to sum:");
+            Console.Write("Enter the number of squares to sum:");
 
             int high = int.Parse(Console.ReadLine());
 
