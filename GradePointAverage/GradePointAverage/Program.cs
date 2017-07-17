@@ -10,11 +10,27 @@ using System;
 
 namespace GradePointAverage
 {
-   public class Program
+   public class GradePointAverage
     {
         public static void Main(string[] args)
         {
             
+            Console.Write("Please enter your grade: ");
+            double grade = double.Parse(Console.ReadLine());
+
+            if (grade >= 3.5)
+            {
+                Console.WriteLine("Congratulations, You made the honor roll.");
+
+            }
+            else if (grade <= 2.0)
+            {
+                Console.WriteLine("Sorry, You are on Probation. ");
+            }
+           // else
+                //Console.WriteLine("Invalid grade Entry!");
+
+            Console.ReadLine();
         }
     }
 }
