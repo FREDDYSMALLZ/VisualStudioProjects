@@ -97,6 +97,7 @@
             this.stockReportsToolStripMenuItem.Name = "stockReportsToolStripMenuItem";
             this.stockReportsToolStripMenuItem.Size = new System.Drawing.Size(279, 38);
             this.stockReportsToolStripMenuItem.Text = "Stock Reports";
+            this.stockReportsToolStripMenuItem.Click += new System.EventHandler(this.stockReportsToolStripMenuItem_Click);
             // 
             // receivingDepartmentToolStripMenuItem
             // 
@@ -113,18 +114,21 @@
             this.stockInventoryToolStripMenuItem1.Name = "stockInventoryToolStripMenuItem1";
             this.stockInventoryToolStripMenuItem1.Size = new System.Drawing.Size(279, 38);
             this.stockInventoryToolStripMenuItem1.Text = "Stock Inventory";
+            this.stockInventoryToolStripMenuItem1.Click += new System.EventHandler(this.stockInventoryToolStripMenuItem1_Click);
             // 
             // productsToolStripMenuItem1
             // 
             this.productsToolStripMenuItem1.Name = "productsToolStripMenuItem1";
             this.productsToolStripMenuItem1.Size = new System.Drawing.Size(279, 38);
             this.productsToolStripMenuItem1.Text = "Products";
+            this.productsToolStripMenuItem1.Click += new System.EventHandler(this.productsToolStripMenuItem1_Click);
             // 
             // stockReportsToolStripMenuItem1
             // 
             this.stockReportsToolStripMenuItem1.Name = "stockReportsToolStripMenuItem1";
             this.stockReportsToolStripMenuItem1.Size = new System.Drawing.Size(279, 38);
             this.stockReportsToolStripMenuItem1.Text = "Stock Reports";
+            this.stockReportsToolStripMenuItem1.Click += new System.EventHandler(this.stockReportsToolStripMenuItem1_Click);
             // 
             // shippingDepartmentToolStripMenuItem
             // 
@@ -141,18 +145,21 @@
             this.stockInventoryToolStripMenuItem2.Name = "stockInventoryToolStripMenuItem2";
             this.stockInventoryToolStripMenuItem2.Size = new System.Drawing.Size(279, 38);
             this.stockInventoryToolStripMenuItem2.Text = "Stock Inventory";
+            this.stockInventoryToolStripMenuItem2.Click += new System.EventHandler(this.stockInventoryToolStripMenuItem2_Click);
             // 
             // productsToolStripMenuItem2
             // 
             this.productsToolStripMenuItem2.Name = "productsToolStripMenuItem2";
             this.productsToolStripMenuItem2.Size = new System.Drawing.Size(279, 38);
             this.productsToolStripMenuItem2.Text = "Products";
+            this.productsToolStripMenuItem2.Click += new System.EventHandler(this.productsToolStripMenuItem2_Click);
             // 
             // stockReportsToolStripMenuItem2
             // 
             this.stockReportsToolStripMenuItem2.Name = "stockReportsToolStripMenuItem2";
             this.stockReportsToolStripMenuItem2.Size = new System.Drawing.Size(279, 38);
             this.stockReportsToolStripMenuItem2.Text = "Stock Reports";
+            this.stockReportsToolStripMenuItem2.Click += new System.EventHandler(this.stockReportsToolStripMenuItem2_Click);
             // 
             // receivingDepartmentToolStripMenuItem1
             // 
@@ -161,33 +168,36 @@
             this.productsToolStripMenuItem3,
             this.stockReportsToolStripMenuItem3});
             this.receivingDepartmentToolStripMenuItem1.Name = "receivingDepartmentToolStripMenuItem1";
-            this.receivingDepartmentToolStripMenuItem1.Size = new System.Drawing.Size(264, 38);
-            this.receivingDepartmentToolStripMenuItem1.Text = "Receiving Department";
+            this.receivingDepartmentToolStripMenuItem1.Size = new System.Drawing.Size(238, 38);
+            this.receivingDepartmentToolStripMenuItem1.Text = "Quality Department";
             // 
             // stockInventoryToolStripMenuItem3
             // 
             this.stockInventoryToolStripMenuItem3.Name = "stockInventoryToolStripMenuItem3";
             this.stockInventoryToolStripMenuItem3.Size = new System.Drawing.Size(279, 38);
             this.stockInventoryToolStripMenuItem3.Text = "Stock Inventory";
+            this.stockInventoryToolStripMenuItem3.Click += new System.EventHandler(this.stockInventoryToolStripMenuItem3_Click);
             // 
             // productsToolStripMenuItem3
             // 
             this.productsToolStripMenuItem3.Name = "productsToolStripMenuItem3";
             this.productsToolStripMenuItem3.Size = new System.Drawing.Size(279, 38);
             this.productsToolStripMenuItem3.Text = "Products";
+            this.productsToolStripMenuItem3.Click += new System.EventHandler(this.productsToolStripMenuItem3_Click);
             // 
             // stockReportsToolStripMenuItem3
             // 
             this.stockReportsToolStripMenuItem3.Name = "stockReportsToolStripMenuItem3";
             this.stockReportsToolStripMenuItem3.Size = new System.Drawing.Size(279, 38);
             this.stockReportsToolStripMenuItem3.Text = "Stock Reports";
+            this.stockReportsToolStripMenuItem3.Click += new System.EventHandler(this.stockReportsToolStripMenuItem3_Click);
             // 
             // statusStrip
             // 
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 834);
+            this.statusStrip.Location = new System.Drawing.Point(0, 539);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 28, 0);
             this.statusStrip.Size = new System.Drawing.Size(1123, 37);
@@ -204,7 +214,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1123, 871);
+            this.ClientSize = new System.Drawing.Size(1123, 576);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
             this.IsMdiContainer = true;

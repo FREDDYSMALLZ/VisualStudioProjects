@@ -51,25 +51,97 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Products.cs">
+    <Compile Include="Stock_Products_Table.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Products.Designer.cs">
-      <DependentUpon>Products.cs</DependentUpon>
+    <Compile Include="Stock_Products_Table.Designer.cs">
+      <DependentUpon>Stock_Products_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Products_Receiving_Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products_Receiving_Table.Designer.cs">
+      <DependentUpon>Products_Receiving_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shipping_Products_Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shipping_Products_Table.Designer.cs">
+      <DependentUpon>Shipping_Products_Table.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QualityControl_Products_Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityControl_Products_Table.Designer.cs">
+      <DependentUpon>QualityControl_Products_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QualityControl_ReportsTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QualityControl_ReportsTable.Designer.cs">
+      <DependentUpon>QualityControl_ReportsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock_QualityControlDataBase_Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock_QualityControlDataBase_Table.Designer.cs">
+      <DependentUpon>Stock_QualityControlDataBase_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Shipping_ReportsTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Shipping_ReportsTable.Designer.cs">
+      <DependentUpon>Shipping_ReportsTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Receiving_Stock_InventoryDataBaseTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receiving_Stock_InventoryDataBaseTable.Designer.cs">
+      <DependentUpon>Receiving_Stock_InventoryDataBaseTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock_Inventory_DataBaseTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock_Inventory_DataBaseTable.Designer.cs">
+      <DependentUpon>Stock_Inventory_DataBaseTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="StockMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="StockMainPage.Designer.cs">
       <DependentUpon>StockMainPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReceivingStock_Reports_Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceivingStock_Reports_Table.Designer.cs">
+      <DependentUpon>ReceivingStock_Reports_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock_Reports_Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stock_Reports_Table.Designer.cs">
+      <DependentUpon>Stock_Reports_Table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShippingStock_InventoryDataBase_Table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShippingStock_InventoryDataBase_Table.Designer.cs">
+      <DependentUpon>ShippingStock_InventoryDataBase_Table.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Products.resx">
-      <DependentUpon>Products.cs</DependentUpon>
+    <EmbeddedResource Include="Stock_Products_Table.resx">
+      <DependentUpon>Stock_Products_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products_Receiving_Table.resx">
+      <DependentUpon>Products_Receiving_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shipping_Products_Table.resx">
+      <DependentUpon>Shipping_Products_Table.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -80,8 +152,35 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QualityControl_Products_Table.resx">
+      <DependentUpon>QualityControl_Products_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QualityControl_ReportsTable.resx">
+      <DependentUpon>QualityControl_ReportsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock_QualityControlDataBase_Table.resx">
+      <DependentUpon>Stock_QualityControlDataBase_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Shipping_ReportsTable.resx">
+      <DependentUpon>Shipping_ReportsTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receiving_Stock_InventoryDataBaseTable.resx">
+      <DependentUpon>Receiving_Stock_InventoryDataBaseTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock_Inventory_DataBaseTable.resx">
+      <DependentUpon>Stock_Inventory_DataBaseTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="StockMainPage.resx">
       <DependentUpon>StockMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceivingStock_Reports_Table.resx">
+      <DependentUpon>ReceivingStock_Reports_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stock_Reports_Table.resx">
+      <DependentUpon>Stock_Reports_Table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShippingStock_InventoryDataBase_Table.resx">
+      <DependentUpon>ShippingStock_InventoryDataBase_Table.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

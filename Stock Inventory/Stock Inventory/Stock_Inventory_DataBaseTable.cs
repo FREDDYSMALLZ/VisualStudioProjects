@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace Stock_Inventory
 {
-    public partial class Products : Form
+    public partial class Stock_Inventory : Form
     {
-        public Products()
+        public Stock_Inventory()
         {
             InitializeComponent();
-        }
-
-        private void Products_Load(object sender, EventArgs e)
-        {
-            comboBox1.SelectedIndex = 0;
-
         }
     }
 }

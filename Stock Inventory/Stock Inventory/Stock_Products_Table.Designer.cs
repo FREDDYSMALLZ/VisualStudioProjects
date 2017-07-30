@@ -1,6 +1,6 @@
 ﻿namespace Stock_Inventory
 {
-    partial class Products
+    partial class Stock_Products_Table
     {
         /// <summary>
         /// Required designer variable.
@@ -159,7 +159,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dateTimePicker1);
             this.Name = "Products";
-            this.Text = "Products";
+            this.Text = "Stock_Products_Table";
             this.Load += new System.EventHandler(this.Products_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
