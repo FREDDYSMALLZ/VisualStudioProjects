@@ -30,9 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.menuStrip = new System.Windows.Forms.MenuStrip();
-            this.statusStrip = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.stockDepartmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.stockInventoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +46,9 @@
             this.stockInventoryToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.productsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.stockReportsToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.statusStrip = new System.Windows.Forms.StatusStrip();
+            this.toolStripStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -64,27 +64,9 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(12, 4, 0, 4);
-            this.menuStrip.Size = new System.Drawing.Size(1123, 44);
+            this.menuStrip.Size = new System.Drawing.Size(1123, 46);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
-            // 
-            // statusStrip
-            // 
-            this.statusStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
-            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 834);
-            this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 28, 0);
-            this.statusStrip.Size = new System.Drawing.Size(1123, 37);
-            this.statusStrip.TabIndex = 2;
-            this.statusStrip.Text = "StatusStrip";
-            // 
-            // toolStripStatusLabel
-            // 
-            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(79, 32);
-            this.toolStripStatusLabel.Text = "Status";
             // 
             // stockDepartmentToolStripMenuItem
             // 
@@ -101,12 +83,14 @@
             this.stockInventoryToolStripMenuItem.Name = "stockInventoryToolStripMenuItem";
             this.stockInventoryToolStripMenuItem.Size = new System.Drawing.Size(279, 38);
             this.stockInventoryToolStripMenuItem.Text = "Stock Inventory";
+            this.stockInventoryToolStripMenuItem.Click += new System.EventHandler(this.stockInventoryToolStripMenuItem_Click);
             // 
             // productsToolStripMenuItem
             // 
             this.productsToolStripMenuItem.Name = "productsToolStripMenuItem";
             this.productsToolStripMenuItem.Size = new System.Drawing.Size(279, 38);
             this.productsToolStripMenuItem.Text = "Products";
+            this.productsToolStripMenuItem.Click += new System.EventHandler(this.productsToolStripMenuItem_Click);
             // 
             // stockReportsToolStripMenuItem
             // 
@@ -197,6 +181,24 @@
             this.stockReportsToolStripMenuItem3.Name = "stockReportsToolStripMenuItem3";
             this.stockReportsToolStripMenuItem3.Size = new System.Drawing.Size(279, 38);
             this.stockReportsToolStripMenuItem3.Text = "Stock Reports";
+            // 
+            // statusStrip
+            // 
+            this.statusStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
+            this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel});
+            this.statusStrip.Location = new System.Drawing.Point(0, 834);
+            this.statusStrip.Name = "statusStrip";
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 28, 0);
+            this.statusStrip.Size = new System.Drawing.Size(1123, 37);
+            this.statusStrip.TabIndex = 2;
+            this.statusStrip.Text = "StatusStrip";
+            // 
+            // toolStripStatusLabel
+            // 
+            this.toolStripStatusLabel.Name = "toolStripStatusLabel";
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(79, 32);
+            this.toolStripStatusLabel.Text = "Status";
             // 
             // StockMainPage
             // 

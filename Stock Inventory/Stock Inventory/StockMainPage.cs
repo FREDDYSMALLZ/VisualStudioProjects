@@ -23,5 +23,17 @@ namespace Stock_Inventory
         {
             Application.Exit();
         }
+
+        private void productsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Products myProduct = new Products();
+            myProduct.MdiParent = this;
+            myProduct.Show();
+        }
+
+        private void stockInventoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
