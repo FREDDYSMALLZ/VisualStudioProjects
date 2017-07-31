@@ -117,7 +117,7 @@ namespace SimpleCalculatorUI
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(116, 292);
+            this.button8.Location = new System.Drawing.Point(134, 302);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(88, 70);
             this.button8.TabIndex = 0;
