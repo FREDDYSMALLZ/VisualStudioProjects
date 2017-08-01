@@ -139,7 +139,7 @@
             this.Column5.HeaderText = "Quantity";
             this.Column5.Name = "Column5";
             // 
-            // Stock_Receiving_Reports
+            // ReceivingStock_Reports_Table
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -151,7 +151,8 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Name = "Stock_Receiving_Reports";
+            this.Name = "ReceivingStock_Reports_Table";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReceivingStock_Reports_Table";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

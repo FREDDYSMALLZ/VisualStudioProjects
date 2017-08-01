@@ -129,7 +129,7 @@
             this.Column5.HeaderText = "Quantity";
             this.Column5.Name = "Column5";
             // 
-            // Stock_Shipping_InventoryDataBase
+            // ShippingStock_InventoryDataBase_Table
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -140,7 +140,8 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.dateTimePicker1);
-            this.Name = "Stock_Shipping_InventoryDataBase";
+            this.Name = "ShippingStock_InventoryDataBase_Table";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ShippingStock_InventoryDataBase_Table";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

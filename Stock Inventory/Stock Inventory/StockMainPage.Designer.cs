@@ -64,7 +64,7 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(12, 4, 0, 4);
-            this.menuStrip.Size = new System.Drawing.Size(1123, 46);
+            this.menuStrip.Size = new System.Drawing.Size(1123, 44);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -75,7 +75,7 @@
             this.productsToolStripMenuItem,
             this.stockReportsToolStripMenuItem});
             this.stockDepartmentToolStripMenuItem.Name = "stockDepartmentToolStripMenuItem";
-            this.stockDepartmentToolStripMenuItem.Size = new System.Drawing.Size(219, 38);
+            this.stockDepartmentToolStripMenuItem.Size = new System.Drawing.Size(219, 36);
             this.stockDepartmentToolStripMenuItem.Text = "Stock Department";
             // 
             // stockInventoryToolStripMenuItem
@@ -106,7 +106,7 @@
             this.productsToolStripMenuItem1,
             this.stockReportsToolStripMenuItem1});
             this.receivingDepartmentToolStripMenuItem.Name = "receivingDepartmentToolStripMenuItem";
-            this.receivingDepartmentToolStripMenuItem.Size = new System.Drawing.Size(264, 38);
+            this.receivingDepartmentToolStripMenuItem.Size = new System.Drawing.Size(264, 36);
             this.receivingDepartmentToolStripMenuItem.Text = "Receiving Department";
             // 
             // stockInventoryToolStripMenuItem1
@@ -137,7 +137,7 @@
             this.productsToolStripMenuItem2,
             this.stockReportsToolStripMenuItem2});
             this.shippingDepartmentToolStripMenuItem.Name = "shippingDepartmentToolStripMenuItem";
-            this.shippingDepartmentToolStripMenuItem.Size = new System.Drawing.Size(257, 38);
+            this.shippingDepartmentToolStripMenuItem.Size = new System.Drawing.Size(257, 36);
             this.shippingDepartmentToolStripMenuItem.Text = "Shipping Department";
             // 
             // stockInventoryToolStripMenuItem2
@@ -168,7 +168,7 @@
             this.productsToolStripMenuItem3,
             this.stockReportsToolStripMenuItem3});
             this.receivingDepartmentToolStripMenuItem1.Name = "receivingDepartmentToolStripMenuItem1";
-            this.receivingDepartmentToolStripMenuItem1.Size = new System.Drawing.Size(238, 38);
+            this.receivingDepartmentToolStripMenuItem1.Size = new System.Drawing.Size(238, 36);
             this.receivingDepartmentToolStripMenuItem1.Text = "Quality Department";
             // 
             // stockInventoryToolStripMenuItem3
@@ -194,20 +194,21 @@
             // 
             // statusStrip
             // 
+            this.statusStrip.AllowMerge = false;
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 539);
+            this.statusStrip.Location = new System.Drawing.Point(0, 538);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 28, 0);
-            this.statusStrip.Size = new System.Drawing.Size(1123, 37);
+            this.statusStrip.Size = new System.Drawing.Size(1123, 38);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
             // toolStripStatusLabel
             // 
             this.toolStripStatusLabel.Name = "toolStripStatusLabel";
-            this.toolStripStatusLabel.Size = new System.Drawing.Size(79, 32);
+            this.toolStripStatusLabel.Size = new System.Drawing.Size(79, 33);
             this.toolStripStatusLabel.Text = "Status";
             // 
             // StockMainPage
