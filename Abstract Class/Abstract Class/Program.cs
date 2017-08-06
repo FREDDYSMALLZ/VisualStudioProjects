@@ -13,7 +13,7 @@ namespace Abstract_Class
             public abstract double getArea();
             public abstract double getCircumference();
     }
-    public class Circle: GeometricShape
+   /* public class Circle: GeometricShape
     {
         private double radius;
 
@@ -30,9 +30,12 @@ namespace Abstract_Class
             return Math.PI * 2 * radius;
         }
     }
+     */   
+       public  static void Main()
+    {
+
+    }
         
-       public  static void Main(string[] args)
-        {
             
         }
-    }
+    

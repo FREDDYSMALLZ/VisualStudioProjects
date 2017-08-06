@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Stock_Inventory
 {
@@ -26,9 +27,42 @@ namespace Stock_Inventory
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            StockMainPage main = new StockMainPage();
-            main.Show();
+            /* SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = 
+                   C:\Users\Fredrick O Ondieki\Desktop\LoginDB.mdf; Integrated Security = 
+                      True; Connect Timeout = 30; User Instance=True;");
+             SqlDataAdapter sqlAdapter = new SqlDataAdapter("Select Count (*) From Login where Username='"
+                 + textBox1.Text + " ' and Password='" + textBox2.Text + "' ", connection);
+             DataTable myDataTable = new DataTable();
+             sqlAdapter.Fill(myDataTable);
+             */
+            /*if (myDataTable.Rows[0][0].ToString == "1")
+            {
+                 this.Hide();
+                 StockMainPage main = new StockMainPage();
+                 main.Show();
+              }
+             else
+             {
+           MessageBox.Show("Incorect Username and Password. Please Enter a Valid Log in Id.");
+           */
+            var Username = "BlueGroupCST117";
+            var Password = "Welcome@123";
+
+            if (Username== textBox1.Text && Password==textBox2.Text)
+            {
+                textBox1.Text = string.Empty;
+                textBox2.Text = string.Empty;
+
+                this.Hide();
+                StockMainPage main = new StockMainPage();
+                main.Show();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect Username and Password. Please Enter a Valid Log in Id.");
+
+            }
+        }
         }
     }
-}
+
