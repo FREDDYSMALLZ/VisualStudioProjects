@@ -60,8 +60,9 @@ namespace Stock_Inventory
             else
             {
                 MessageBox.Show("Incorrect Username and Password. Please Enter a Valid Log in Id.");
+          }
+            
 
-            }
         }
         }
     }

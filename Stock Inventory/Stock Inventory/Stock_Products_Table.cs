@@ -22,5 +22,24 @@ namespace Stock_Inventory
             comboBox1.SelectedIndex = 0;
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

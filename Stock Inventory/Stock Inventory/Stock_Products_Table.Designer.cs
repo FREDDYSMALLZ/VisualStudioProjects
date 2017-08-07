@@ -84,6 +84,7 @@
             this.comboBox1.Size = new System.Drawing.Size(200, 33);
             this.comboBox1.TabIndex = 4;
             this.comboBox1.Text = "Status";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -102,6 +103,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dataGridView1
             // 
@@ -116,7 +118,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(12, 103);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1436, 314);
+            this.dataGridView1.Size = new System.Drawing.Size(1436, 412);
             this.dataGridView1.TabIndex = 6;
             // 
             // Column1
