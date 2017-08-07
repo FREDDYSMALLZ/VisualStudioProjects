@@ -60,6 +60,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Account1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AccountDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AccountDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ElectronicBankingSystem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +90,28 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="Account1.xsc">
+      <DependentUpon>Account1.xsd</DependentUpon>
+    </None>
+    <None Include="Account1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Account1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Account1.xss">
+      <DependentUpon>Account1.xsd</DependentUpon>
+    </None>
+    <None Include="AccountDataSet.xsc">
+      <DependentUpon>AccountDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AccountDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AccountDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AccountDataSet.xss">
+      <DependentUpon>AccountDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
