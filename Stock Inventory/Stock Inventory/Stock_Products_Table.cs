@@ -19,6 +19,7 @@ namespace Stock_Inventory
 
         private void Products_Load(object sender, EventArgs e)
         {
+            
             comboBox1.SelectedIndex = 0;
 
         }
@@ -41,5 +42,7 @@ namespace Stock_Inventory
         {
             
         }
+
+       
     }
 }

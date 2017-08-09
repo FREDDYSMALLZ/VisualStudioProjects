@@ -16,5 +16,16 @@ namespace Stock_Inventory
         {
             InitializeComponent();
         }
+
+        private void productsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+        private void Stock_Inventory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

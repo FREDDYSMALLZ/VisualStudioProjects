@@ -143,6 +143,7 @@
             this.Name = "Stock_Inventory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Stock_Inventory_DataBaseTable";
+            this.Load += new System.EventHandler(this.Stock_Inventory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
