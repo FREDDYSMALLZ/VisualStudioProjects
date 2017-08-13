@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Freight;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,6 +23,7 @@ namespace Stock_Inventory
         private void StockMainPage_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+            MessageBox.Show("Please click the OK button to exit the application.");
         }
 
         private void productsToolStripMenuItem_Click(object sender, EventArgs e)
@@ -108,6 +110,74 @@ namespace Stock_Inventory
             QualityControl_ReportsTable myQC_ReportsTable = new QualityControl_ReportsTable();
             myQC_ReportsTable.MdiParent = this;
             myQC_ReportsTable.Show();
+        }
+
+        private void freightCarriersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FreightCarrier myCarrier = new FreightCarrier();
+                myCarrier.MdiParent = this;
+                myCarrier.Show();
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error Occured while loading the fright table. Please click the freight tab once.");
+
+            }
+        }
+
+        private void freightCarrierToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FreightCarrier myCarrier = new FreightCarrier();
+                myCarrier.MdiParent = this;
+                myCarrier.Show();
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error Occured while loading the fright table. Please click the freight tab once.");
+
+            }
+        }
+
+        private void freightCarrierToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FreightCarrier myCarrier = new FreightCarrier();
+                myCarrier.MdiParent = this;
+                myCarrier.Show();
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error Occured while loading the fright table. Please click the freight tab once.");
+
+            }
+        }
+
+        private void freightCarrierToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FreightCarrier myCarrier = new FreightCarrier();
+                myCarrier.MdiParent = this;
+                myCarrier.Show();
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error Occured while loading the fright table. Please click the freight tab once.");
+
+            }
         }
     }
 }

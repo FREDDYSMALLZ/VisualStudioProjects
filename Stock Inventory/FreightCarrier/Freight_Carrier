@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Stock_Inventory
+namespace FreightCarrier
 {
-    public partial class FreightCarrier : Form
+    public partial class Form1 : Form
     {
-        public FreightCarrier()
+        public Form1()
         {
             InitializeComponent();
         }

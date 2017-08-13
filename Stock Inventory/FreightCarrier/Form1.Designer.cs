@@ -1,6 +1,6 @@
-﻿namespace Stock_Inventory
+﻿namespace FreightCarrier
 {
-    partial class FreightCarrier
+    partial class Form1
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // FreightCarrier
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(720, 378);
-            this.Name = "FreightCarrier";
-            this.Text = "FreightCarrier";
+            this.ClientSize = new System.Drawing.Size(766, 229);
+            this.Name = "Form1";
+            this.Text = "Form1";
             this.ResumeLayout(false);
 
         }
@@ -44,3 +44,4 @@
         #endregion
     }
 }
+

@@ -60,12 +60,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FreightCarrier.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FreightCarrier.Designer.cs">
-      <DependentUpon>FreightCarrier.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,9 +156,6 @@
     <Compile Include="ShippingStock_InventoryDataBase_Table.Designer.cs">
       <DependentUpon>ShippingStock_InventoryDataBase_Table.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FreightCarrier.resx">
-      <DependentUpon>FreightCarrier.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -274,6 +265,12 @@
     <Content Include="Stock Inventory.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Freight\Freight.csproj">
+      <Project>{6aa257b7-037d-4654-afe0-6203c1679233}</Project>
+      <Name>Freight</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
