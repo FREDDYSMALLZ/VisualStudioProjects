@@ -48,11 +48,22 @@ namespace Stock_Inventory.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\"|DataDirectory|\\Stock Inventory.ac" +
-            "cdb\"")]
-        public string Stock_InventoryConnectionString1 {
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\Products.mdf;" +
+            "Integrated Security=True")]
+        public string ProductsConnectionString {
             get {
-                return ((string)(this["Stock_InventoryConnectionString1"]));
+                return ((string)(this["ProductsConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\LOGIN.mdf;Int" +
+            "egrated Security=True")]
+        public string LOGINConnectionString {
+            get {
+                return ((string)(this["LOGINConnectionString"]));
             }
         }
     }

@@ -16,5 +16,10 @@ namespace Stock_Inventory
         {
             InitializeComponent();
         }
+
+        private void ShippingStock_InventoryDataBase_Table_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

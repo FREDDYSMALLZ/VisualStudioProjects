@@ -45,6 +45,8 @@ namespace Stock_Inventory
              {
            MessageBox.Show("Incorect Username and Password. Please Enter a Valid Log in Id.");
            */
+            
+
             var Username = "BlueGroupCST117";
             var Password = "Welcome@123";
 
@@ -56,8 +58,6 @@ namespace Stock_Inventory
                 this.Hide();
                 StockMainPage main = new StockMainPage();
                 main.Show();
-
-                MessageBox.Show("Welcome to Stock Management Software");
             }
             else
             {
