@@ -56,6 +56,8 @@ namespace Stock_Inventory
                 this.Hide();
                 StockMainPage main = new StockMainPage();
                 main.Show();
+
+                MessageBox.Show("Welcome to Stock Management Software");
             }
             else
             {
