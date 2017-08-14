@@ -37,7 +37,7 @@ namespace Stock_Inventory
                 myProducts.MdiParent = this;
                 MessageBox.Show("The product table was loaded Successfully. Press Ok. to Continue.");
                 myProducts.Show();
-
+                
             }
             catch (Exception ex)
             {

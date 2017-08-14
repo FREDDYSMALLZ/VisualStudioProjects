@@ -42,7 +42,7 @@ namespace Freight
                 MessageBox.Show("Are you sure you want to Add new data?",
                                     "Click OK to add new record, NO to discard", MessageBoxButtons.YesNo);
                 this.freight_Carrier_TableBindingSource.AddNew();//Adds a new row to the record and saves data to the table.
-                
+                MessageBox.Show("Data was added sucessfully. Click OK. to continue.");
              
 
             }
