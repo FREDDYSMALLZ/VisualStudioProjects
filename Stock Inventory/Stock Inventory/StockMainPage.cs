@@ -1,4 +1,5 @@
-﻿using Freight;
+﻿using Customer;
+using Freight;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -118,6 +119,7 @@ namespace Stock_Inventory
             {
                 FreightCarrier myCarrier = new FreightCarrier();
                 myCarrier.MdiParent = this;
+                MessageBox.Show("The Freight Carrier Data was loaded successfully. Please press OK. to continue.");
                 myCarrier.Show();
 
             }
@@ -135,6 +137,7 @@ namespace Stock_Inventory
             {
                 FreightCarrier myCarrier = new FreightCarrier();
                 myCarrier.MdiParent = this;
+                MessageBox.Show("The Freight Carrier Data was loaded successfully. Please press OK. to continue.");
                 myCarrier.Show();
 
             }
@@ -152,6 +155,7 @@ namespace Stock_Inventory
             {
                 FreightCarrier myCarrier = new FreightCarrier();
                 myCarrier.MdiParent = this;
+                MessageBox.Show("The Freight Carrier Data was loaded successfully. Please press OK. to continue.");
                 myCarrier.Show();
 
             }
@@ -169,6 +173,7 @@ namespace Stock_Inventory
             {
                 FreightCarrier myCarrier = new FreightCarrier();
                 myCarrier.MdiParent = this;
+                MessageBox.Show("The Freight Carrier Data was loaded successfully. Please press OK. to continue.");
                 myCarrier.Show();
 
             }
@@ -177,6 +182,23 @@ namespace Stock_Inventory
 
                 MessageBox.Show("Error Occured while loading the fright table. Please click the freight tab once.");
 
+            }
+        }
+
+        private void customerDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CustomerDTA myCustomer = new CustomerDTA();
+                myCustomer.MdiParent = this;
+
+                MessageBox.Show("The Customer Data was Loaded successfully. Press Ok. to view Data.");
+                myCustomer.Show();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
             }
         }
     }

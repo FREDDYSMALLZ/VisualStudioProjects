@@ -267,6 +267,10 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Customer\Customer.csproj">
+      <Project>{c53dc000-8b52-4d09-85ef-1443654c4351}</Project>
+      <Name>Customer</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Freight\Freight.csproj">
       <Project>{6aa257b7-037d-4654-afe0-6203c1679233}</Project>
       <Name>Freight</Name>

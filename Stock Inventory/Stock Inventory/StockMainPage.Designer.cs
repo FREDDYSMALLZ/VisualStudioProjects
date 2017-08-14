@@ -53,6 +53,10 @@
             this.freightCarrierToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.freightCarrierToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.freightCarrierToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerDataToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerDataToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerDataToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerDataToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.SuspendLayout();
@@ -68,19 +72,21 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(12, 4, 0, 4);
-            this.menuStrip.Size = new System.Drawing.Size(1123, 46);
+            this.menuStrip.Size = new System.Drawing.Size(1123, 44);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
             // stockDepartmentToolStripMenuItem
             // 
+            this.stockDepartmentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.stockDepartmentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stockInventoryToolStripMenuItem,
             this.productsToolStripMenuItem,
             this.stockReportsToolStripMenuItem,
-            this.freightCarriersToolStripMenuItem});
+            this.freightCarriersToolStripMenuItem,
+            this.customerDataToolStripMenuItem});
             this.stockDepartmentToolStripMenuItem.Name = "stockDepartmentToolStripMenuItem";
-            this.stockDepartmentToolStripMenuItem.Size = new System.Drawing.Size(219, 38);
+            this.stockDepartmentToolStripMenuItem.Size = new System.Drawing.Size(219, 36);
             this.stockDepartmentToolStripMenuItem.Text = "Stock Department";
             // 
             // stockInventoryToolStripMenuItem
@@ -106,13 +112,15 @@
             // 
             // receivingDepartmentToolStripMenuItem
             // 
+            this.receivingDepartmentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.receivingDepartmentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stockInventoryToolStripMenuItem1,
             this.productsToolStripMenuItem1,
             this.stockReportsToolStripMenuItem1,
-            this.freightCarrierToolStripMenuItem});
+            this.freightCarrierToolStripMenuItem,
+            this.customerDataToolStripMenuItem1});
             this.receivingDepartmentToolStripMenuItem.Name = "receivingDepartmentToolStripMenuItem";
-            this.receivingDepartmentToolStripMenuItem.Size = new System.Drawing.Size(264, 38);
+            this.receivingDepartmentToolStripMenuItem.Size = new System.Drawing.Size(264, 36);
             this.receivingDepartmentToolStripMenuItem.Text = "Receiving Department";
             // 
             // stockInventoryToolStripMenuItem1
@@ -138,13 +146,15 @@
             // 
             // shippingDepartmentToolStripMenuItem
             // 
+            this.shippingDepartmentToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.shippingDepartmentToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stockInventoryToolStripMenuItem2,
             this.productsToolStripMenuItem2,
             this.stockReportsToolStripMenuItem2,
-            this.freightCarrierToolStripMenuItem1});
+            this.freightCarrierToolStripMenuItem1,
+            this.customerDataToolStripMenuItem2});
             this.shippingDepartmentToolStripMenuItem.Name = "shippingDepartmentToolStripMenuItem";
-            this.shippingDepartmentToolStripMenuItem.Size = new System.Drawing.Size(257, 38);
+            this.shippingDepartmentToolStripMenuItem.Size = new System.Drawing.Size(257, 36);
             this.shippingDepartmentToolStripMenuItem.Text = "Shipping Department";
             // 
             // stockInventoryToolStripMenuItem2
@@ -170,13 +180,15 @@
             // 
             // receivingDepartmentToolStripMenuItem1
             // 
+            this.receivingDepartmentToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.receivingDepartmentToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.stockInventoryToolStripMenuItem3,
             this.productsToolStripMenuItem3,
             this.stockReportsToolStripMenuItem3,
-            this.freightCarrierToolStripMenuItem2});
+            this.freightCarrierToolStripMenuItem2,
+            this.customerDataToolStripMenuItem3});
             this.receivingDepartmentToolStripMenuItem1.Name = "receivingDepartmentToolStripMenuItem1";
-            this.receivingDepartmentToolStripMenuItem1.Size = new System.Drawing.Size(238, 38);
+            this.receivingDepartmentToolStripMenuItem1.Size = new System.Drawing.Size(238, 36);
             this.receivingDepartmentToolStripMenuItem1.Text = "Quality Department";
             // 
             // stockInventoryToolStripMenuItem3
@@ -247,10 +259,36 @@
             this.freightCarrierToolStripMenuItem2.Text = "Freight Carrier";
             this.freightCarrierToolStripMenuItem2.Click += new System.EventHandler(this.freightCarrierToolStripMenuItem2_Click);
             // 
+            // customerDataToolStripMenuItem
+            // 
+            this.customerDataToolStripMenuItem.Name = "customerDataToolStripMenuItem";
+            this.customerDataToolStripMenuItem.Size = new System.Drawing.Size(279, 38);
+            this.customerDataToolStripMenuItem.Text = "Customer Data";
+            this.customerDataToolStripMenuItem.Click += new System.EventHandler(this.customerDataToolStripMenuItem_Click);
+            // 
+            // customerDataToolStripMenuItem1
+            // 
+            this.customerDataToolStripMenuItem1.Name = "customerDataToolStripMenuItem1";
+            this.customerDataToolStripMenuItem1.Size = new System.Drawing.Size(279, 38);
+            this.customerDataToolStripMenuItem1.Text = "Customer Data";
+            // 
+            // customerDataToolStripMenuItem2
+            // 
+            this.customerDataToolStripMenuItem2.Name = "customerDataToolStripMenuItem2";
+            this.customerDataToolStripMenuItem2.Size = new System.Drawing.Size(279, 38);
+            this.customerDataToolStripMenuItem2.Text = "Customer Data";
+            // 
+            // customerDataToolStripMenuItem3
+            // 
+            this.customerDataToolStripMenuItem3.Name = "customerDataToolStripMenuItem3";
+            this.customerDataToolStripMenuItem3.Size = new System.Drawing.Size(279, 38);
+            this.customerDataToolStripMenuItem3.Text = "Customer Data";
+            // 
             // StockMainPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1123, 576);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
@@ -297,6 +335,10 @@
         private System.Windows.Forms.ToolStripMenuItem freightCarrierToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem freightCarrierToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem freightCarrierToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem customerDataToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem customerDataToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem customerDataToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem customerDataToolStripMenuItem3;
     }
 }
 

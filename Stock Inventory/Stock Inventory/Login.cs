@@ -55,9 +55,9 @@ namespace Stock_Inventory
                 textBox1.Text = string.Empty;
                 textBox2.Text = string.Empty;
 
-                MessageBox.Show("Welcome to Stock Inventory Management Systems. Please press the OK Button to continue.");
-
+                
                 this.Hide();
+                MessageBox.Show("Welcome to Stock Inventory Management Systems. Please press the OK Button to continue.");
                 StockMainPage main = new StockMainPage();
                 main.Show();
 
