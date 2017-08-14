@@ -1,5 +1,6 @@
 ﻿using Customer;
 using Freight;
+using Products;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -29,88 +30,158 @@ namespace Stock_Inventory
 
         private void productsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Stock_Products_Table myProduct = new Stock_Products_Table();
-            myProduct.MdiParent = this;
-            myProduct.Show();
+            try
+            {
+
+                ProductsTBL myProducts = new ProductsTBL();
+                myProducts.MdiParent = this;
+                MessageBox.Show("The product table was loaded Successfully. Press Ok. to Continue.");
+                myProducts.Show();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void stockInventoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Stock_Inventory myStock_Inventory_DataBase = new Stock_Inventory();
-            myStock_Inventory_DataBase.MdiParent = this;
-            myStock_Inventory_DataBase.Show();
+            try
+            {
+                ProductsTBL myProducts = new ProductsTBL();
+                myProducts.MdiParent = this;
+                MessageBox.Show("The product table was loaded Successfully. Press Ok. to Continue.");
+                myProducts.Show();
 
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void stockReportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Stock_Reports_Table myStock_Reports = new Stock_Reports_Table();
-            myStock_Reports.MdiParent = this;
-            myStock_Reports.Show();
+            
         }
 
         private void productsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Products_Receiving_Table myProducts_Table = new Products_Receiving_Table();
-            myProducts_Table.MdiParent = this;
-            myProducts_Table.Show();
+            try
+            {
+                ProductsTBL myProducts = new ProductsTBL();
+                myProducts.MdiParent = this;
+                MessageBox.Show("The product table was loaded Successfully. Press Ok. to Continue.");
+                myProducts.Show();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void stockInventoryToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            Receiving_Stock_InventoryDataBaseTable myStock_InventoryDataBase = new Receiving_Stock_InventoryDataBaseTable();
-            myStock_InventoryDataBase.MdiParent = this;
-            myStock_InventoryDataBase.Show();
+            try
+            {
+                ProductsTBL myProducts = new ProductsTBL();
+                myProducts.MdiParent = this;
+                MessageBox.Show("The product table was loaded Successfully. Press Ok. to Continue.");
+                myProducts.Show();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void stockReportsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            ReceivingStock_Reports_Table myStock_Reports = new ReceivingStock_Reports_Table();
-            myStock_Reports.MdiParent = this;
-            myStock_Reports.Show();
+           
+           
         }
 
         private void stockInventoryToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            ShippingStock_InventoryDataBase_Table myShipping_InventoryDataBase
-                = new ShippingStock_InventoryDataBase_Table();
-            myShipping_InventoryDataBase.MdiParent = this;
-            myShipping_InventoryDataBase.Show();
+            try
+            {
+                ProductsTBL myProducts = new ProductsTBL();
+                myProducts.MdiParent = this;
+                MessageBox.Show("The product table was loaded Successfully. Press Ok. to Continue.");
+                myProducts.Show();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void productsToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Shipping_Products_Table myProductsTable = new Shipping_Products_Table();
-            myProductsTable.MdiParent = this;
-            myProductsTable.Show();
+            try
+            {
+                ProductsTBL myProducts = new ProductsTBL();
+                myProducts.MdiParent = this;
+                MessageBox.Show("The product table was loaded Successfully. Press Ok. to Continue.");
+                myProducts.Show();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void stockReportsToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            Shipping_ReportsTable myReceivingReports = new Shipping_ReportsTable();
-            myReceivingReports.MdiParent = this;
-            myReceivingReports.Show();
+            
         }
 
         private void stockInventoryToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            Stock_QualityControlDataBase_Table myQC_DataBase = new Stock_QualityControlDataBase_Table();
-            myQC_DataBase.MdiParent = this;
-            myQC_DataBase.Show();
+            try
+            {
+                ProductsTBL myProducts = new ProductsTBL();
+                myProducts.MdiParent = this;
+                MessageBox.Show("The product table was loaded Successfully. Press Ok. to Continue.");
+                myProducts.Show();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void productsToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            QualityControl_Products_Table myQC_ProductTable = new QualityControl_Products_Table();
-            myQC_ProductTable.MdiParent = this;
-            myQC_ProductTable.Show();
+            try
+            {
+                ProductsTBL myProducts = new ProductsTBL();
+                myProducts.MdiParent = this;
+                MessageBox.Show("The product table was loaded Successfully. Press Ok. to Continue.");
+                myProducts.Show();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void stockReportsToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            QualityControl_ReportsTable myQC_ReportsTable = new QualityControl_ReportsTable();
-            myQC_ReportsTable.MdiParent = this;
-            myQC_ReportsTable.Show();
+            
+           
         }
 
         private void freightCarriersToolStripMenuItem_Click(object sender, EventArgs e)
@@ -172,8 +243,8 @@ namespace Stock_Inventory
             try
             {
                 FreightCarrier myCarrier = new FreightCarrier();
-                myCarrier.MdiParent = this;
                 MessageBox.Show("The Freight Carrier Data was loaded successfully. Please press OK. to continue.");
+                myCarrier.MdiParent = this;
                 myCarrier.Show();
 
             }
@@ -186,6 +257,58 @@ namespace Stock_Inventory
         }
 
         private void customerDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CustomerDTA myCustomer = new CustomerDTA();
+                myCustomer.MdiParent = this;
+
+                MessageBox.Show("The Customer Data was Loaded successfully. Press Ok. to view Data.");
+                myCustomer.Show();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void customerDataToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CustomerDTA myCustomer = new CustomerDTA();
+                myCustomer.MdiParent = this;
+
+                MessageBox.Show("The Customer Data was Loaded successfully. Press Ok. to view Data.");
+                myCustomer.Show();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void customerDataToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CustomerDTA myCustomer = new CustomerDTA();
+                myCustomer.MdiParent = this;
+
+                MessageBox.Show("The Customer Data was Loaded successfully. Press Ok. to view Data.");
+                myCustomer.Show();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void customerDataToolStripMenuItem3_Click(object sender, EventArgs e)
         {
             try
             {
