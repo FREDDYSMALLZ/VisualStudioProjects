@@ -38,7 +38,10 @@ namespace Products
                 this.Validate();
                 this.customer_TableBindingSource.EndEdit();
                 this.tableAdapterManager.UpdateAll(this.stocInventoryDataSet);
+                MessageBox.Show("Are you sure you want to Add new data?",
+                    "Click OK to add new record, NO to discard", MessageBoxButtons.YesNo);
                 this.customer_TableBindingSource.AddNew(); // Adds new new data to the table and as well saves the data.
+
                
 
             }
@@ -51,12 +54,30 @@ namespace Products
 
         private void button4_Click(object sender, EventArgs e)
         {
-            customer_TableBindingSource.MoveNext(); // Moves to the table selcter to the next item on the table.
+            try
+            {
+                customer_TableBindingSource.MoveNext(); // Moves to the table selcter to the next item on the table.
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("End of record. Please click on previous button to view the last record.");
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            customer_TableBindingSource.MovePrevious();// Moves the table selector to the previous item on the list.
+            try
+            {
+                customer_TableBindingSource.MovePrevious();// Moves the table selector to the previous item on the list.
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)

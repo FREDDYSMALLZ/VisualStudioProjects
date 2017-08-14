@@ -39,7 +39,10 @@ namespace Freight
                 this.Validate();
                 this.freight_Carrier_TableBindingSource.EndEdit();
                 this.tableAdapterManager.UpdateAll(this.stock_InventoryDataSet);
-                this.freight_Carrier_TableBindingSource.AddNew();
+                MessageBox.Show("Are you sure you want to Add new data?",
+                                    "Click OK to add new record, NO to discard", MessageBoxButtons.YesNo);
+                this.freight_Carrier_TableBindingSource.AddNew();//Adds a new row to the record and saves data to the table.
+                
              
 
             }
@@ -53,25 +56,46 @@ namespace Freight
 
         private void button3_Click(object sender, EventArgs e)
         {
-            freight_Carrier_TableBindingSource.MovePrevious();
+            try
+            {
+                freight_Carrier_TableBindingSource.MovePrevious();// Moves to the previous selected record in the table.
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            freight_Carrier_TableBindingSource.MoveNext();
+            try
+            {
+                freight_Carrier_TableBindingSource.MoveNext(); // Moves to the next record on the table.
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("End of record. Please enter new record.");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             try
             {
+                freight_Carrier_TableBindingSource.RemoveCurrent();// Deletes the selected record from the table.
+                MessageBox.Show("Are you sure you want to delete the record",
+                    "Click Yes to delete, NO to continue", MessageBoxButtons.YesNo);
                 
 
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                MessageBox.Show(ex.Message);
             }
         }
     }
