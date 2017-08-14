@@ -38,7 +38,8 @@ namespace Products
                 this.Validate();
                 this.customer_TableBindingSource.EndEdit();
                 this.tableAdapterManager.UpdateAll(this.stocInventoryDataSet);
-                this.customer_TableBindingSource.AddNew();
+                this.customer_TableBindingSource.AddNew(); // Adds new new data to the table and as well saves the data.
+               
 
             }
             catch (Exception)
@@ -50,12 +51,28 @@ namespace Products
 
         private void button4_Click(object sender, EventArgs e)
         {
-            customer_TableBindingSource.MoveNext();
+            customer_TableBindingSource.MoveNext(); // Moves to the table selcter to the next item on the table.
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            customer_TableBindingSource.MovePrevious();
+            customer_TableBindingSource.MovePrevious();// Moves the table selector to the previous item on the list.
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                customer_TableBindingSource.RemoveCurrent(); // Deletes the current selected data from the table.
+                MessageBox.Show("Are you sure you want to delete the selected data from the table?",
+                    "Click OK to delete,NO to continue",MessageBoxButtons.YesNo); 
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
