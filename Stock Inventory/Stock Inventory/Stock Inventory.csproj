@@ -119,6 +119,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="QualityControl_ReportsTable.resx">
       <DependentUpon>QualityControl_ReportsTable.cs</DependentUpon>
@@ -190,6 +191,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>LOGIN.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\LOGIN.png" />
+    <None Include="Resources\stock-vector-auto-repair-services-black-concept-with-car-icons-and-spare-parts-in-the-garage-in-the-stretched-445194946.jpg" />
+    <None Include="Resources\DSK.jpg" />
+    <None Include="Resources\dribbblebackground-01_1x.jpg" />
     <Content Include="Stock Inventory.accdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

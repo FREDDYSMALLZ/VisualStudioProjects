@@ -27,9 +27,41 @@ namespace Customer
 
         private void CustomerDTA_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'stock_InventoryDataSet.Customer_Table' table. You can move, or remove it, as needed.
             this.customer_TableTableAdapter.Fill(this.stock_InventoryDataSet.Customer_Table);
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.Validate();
+                this.customer_TableBindingSource.EndEdit();
+                this.tableAdapterManager.UpdateAll(this.stock_InventoryDataSet);
+                this.customer_TableBindingSource.AddNew();
+                MessageBox.Show("New Data is saved Successfully.");
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            customer_TableBindingSource.MovePrevious();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            customer_TableBindingSource.MoveNext();
         }
     }
 }
