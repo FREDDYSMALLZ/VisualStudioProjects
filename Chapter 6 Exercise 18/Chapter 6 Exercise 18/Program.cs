@@ -16,10 +16,7 @@ namespace Chapter_6_Exercise_18
     
    public class Spoon: IBendable
     {
-        public Spoon()
-        {
-
-        }
+       
         public void Eat()
         {
             Console.WriteLine("The Spoon is used for eating.");
@@ -56,33 +53,25 @@ namespace Chapter_6_Exercise_18
         }
         public class TestIBendable
         {
-            public static void Spoon_(IBendable B)
-            {
-                B.Bend();
-                B.Eat();
-                B.Raise();
-                
-            }
+            
         }
         public static void Main(string[] args)
         {
             Spoon newSpoon = new Spoon();
             Arm newArm = new Arm();
 
-            Spoon_Arm(newSpoon);
-            Console.WriteLine();
-            Spoon_Arm(newArm);           
-        }
+            newSpoon.Bend();
+            newArm.Bend();
+            newSpoon.Eat();
+            newArm.Eat();
+            newSpoon.Raise();
+            newArm.Raise();
 
-        private static void Spoon_Arm(Arm newArm)
-        {
-            
-        }
 
-        private static void Spoon_Arm(Spoon newSpoon)
-        {
             Console.ReadLine();
         }
+
+     
     }
 
 }
