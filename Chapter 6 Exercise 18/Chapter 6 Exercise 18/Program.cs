@@ -9,18 +9,36 @@ namespace Chapter_6_Exercise_18
     public interface IBendable
     {
         void Bend();
+        void Raise();
+        void Eat();
 
     }
     
    public class Spoon: IBendable
     {
+        public Spoon()
+        {
+
+        }
         public void Eat()
         {
             Console.WriteLine("The Spoon is used for eating.");
 
         }
+        public void Raise()
+        {
+            Console.WriteLine("The Spoon Can be raised.");
+        }
+        public void Bend ()
+        {
+            Console.WriteLine("The Spoon can be bent.");
+        }
         public class Arm : IBendable
         {
+            public Arm()
+            {
+
+            }
             public void Bend()
             {
                 Console.WriteLine("The Arm can bend.");
@@ -28,14 +46,21 @@ namespace Chapter_6_Exercise_18
             }
             public void Raise()
             {
+                Console.WriteLine("The Arm can be raised.");
 
+            }
+            public void Eat()
+            {
+                Console.WriteLine("The arm is used to hold the spoon when eating.");
             }
         }
         public class TestIBendable
         {
-            public static void Bend(IBendable B)
+            public static void Spoon_(IBendable B)
             {
                 B.Bend();
+                B.Eat();
+                B.Raise();
                 
             }
         }
@@ -44,27 +69,20 @@ namespace Chapter_6_Exercise_18
             Spoon newSpoon = new Spoon();
             Arm newArm = new Arm();
 
-            Bend(newSpoon);
-
-            Console.WriteLine("");
-            Bend(newArm);
+            Spoon_Arm(newSpoon);
+            Console.WriteLine();
+            Spoon_Arm(newArm);           
         }
 
-        private static void Bend(Arm newArm)
+        private static void Spoon_Arm(Arm newArm)
         {
             
         }
 
-        private static void Bend(Spoon newSpoon)
-        {
-            
-        }
-
-        public void Bend()
+        private static void Spoon_Arm(Spoon newSpoon)
         {
             Console.ReadLine();
         }
-
     }
 
 }
