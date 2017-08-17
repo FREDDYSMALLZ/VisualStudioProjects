@@ -89,7 +89,6 @@ namespace Customer
             }
             catch (Exception)
             {
-
                 MessageBox.Show("End of record. Please enter new record or " +
                     "click the previous button to view the previous record.");
             }
