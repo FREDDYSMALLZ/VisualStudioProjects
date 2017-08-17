@@ -1,6 +1,7 @@
 ﻿using Customer;
 using Freight;
 using Products;
+using Stock_Report;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -65,7 +66,18 @@ namespace Stock_Inventory
 
         private void stockReportsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                StockReport myStockReport = new StockReport();
+                myStockReport.MdiParent = this;
+                MessageBox.Show("The Stock Reports Table was loaded Succcessfully. Please Press OK. to continue.");
+                myStockReport.Show();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void productsToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -102,7 +114,19 @@ namespace Stock_Inventory
 
         private void stockReportsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-           
+            try
+            {
+                StockReport myStockReport = new StockReport();
+                myStockReport.MdiParent = this;
+                MessageBox.Show("The Stock Reports Table was loaded Succcessfully. Please Press OK. to continue.");
+                myStockReport.Show();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
            
         }
 
@@ -141,7 +165,19 @@ namespace Stock_Inventory
 
         private void stockReportsToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                StockReport myStockReport = new StockReport();
+                myStockReport.MdiParent = this;
+                MessageBox.Show("The Stock Reports Table was loaded Succcessfully. Please Press OK. to continue.");
+                myStockReport.Show();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void stockInventoryToolStripMenuItem3_Click(object sender, EventArgs e)
@@ -180,7 +216,19 @@ namespace Stock_Inventory
 
         private void stockReportsToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                StockReport myStockReport = new StockReport();
+                myStockReport.MdiParent = this;
+                MessageBox.Show("The Stock Reports Table was loaded Succcessfully. Please Press OK. to continue.");
+                myStockReport.Show();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
            
         }
 

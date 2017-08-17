@@ -212,6 +212,10 @@
       <Project>{8134793d-8bb2-41bb-8b03-774a7204693f}</Project>
       <Name>Products</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Stock Report\Stock Report.csproj">
+      <Project>{5677ebbf-79a9-4bc2-8c5d-45b10fcc3455}</Project>
+      <Name>Stock Report</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
