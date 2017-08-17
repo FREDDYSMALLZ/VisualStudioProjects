@@ -8,8 +8,6 @@ namespace Chapter_3_Exerciese_22
 {
     public  class SimpleInterest
     {
-        double Interest, interest_Rate, Number_Of_Years;
-        double Balance, Final_Balance;
         public static void Main(string[] args)
         {
 
@@ -25,15 +23,12 @@ namespace Chapter_3_Exerciese_22
             String input2 = Console.ReadLine();
             double Final_Balance = double.Parse(input2);
 
-            double Number_Of_Years = (1 / (interest_Rate / 100)) * ((Final_Balance / Balance) - 1);
+            double Number_Of_Years = ((1 / (interest_Rate / 100)) * 
+                ((Final_Balance / Balance) - 1)) / 12;
 
 
-            Console.WriteLine("");
-
-
-
-
-
+            Console.WriteLine("The final balance at in the account will be {0:C}, after " +
+                "{1:F2} years", Final_Balance, Number_Of_Years);
 
 
             Console.ReadLine();
