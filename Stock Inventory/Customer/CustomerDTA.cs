@@ -16,7 +16,6 @@ namespace Customer
         {
             InitializeComponent();
         }
-
         private void customer_TableBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
             this.Validate();
