@@ -27,6 +27,8 @@ namespace Products
 
         private void ProductsTBL_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'stocInventoryDataSet.Products_Table' table. You can move, or remove it, as needed.
+            this.products_TableTableAdapter.Fill(this.stocInventoryDataSet.Products_Table);
             this.customer_TableTableAdapter.Fill(this.stocInventoryDataSet.Customer_Table);
 
         }

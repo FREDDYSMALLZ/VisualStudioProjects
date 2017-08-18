@@ -47,22 +47,25 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.customer_TableBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
-            this.customer_TableDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.products_TableBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.products_TableTableAdapter = new Products.StocInventoryDataSetTableAdapters.Products_TableTableAdapter();
+            this.products_TableDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.stocInventoryDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customer_TableBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.customer_TableBindingNavigator)).BeginInit();
             this.customer_TableBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customer_TableDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.products_TableBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.products_TableDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // stocInventoryDataSet
@@ -213,67 +216,6 @@
             this.customer_TableBindingNavigatorSaveItem.Text = "Save Data";
             this.customer_TableBindingNavigatorSaveItem.Click += new System.EventHandler(this.customer_TableBindingNavigatorSaveItem_Click);
             // 
-            // customer_TableDataGridView
-            // 
-            this.customer_TableDataGridView.AutoGenerateColumns = false;
-            this.customer_TableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.customer_TableDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6});
-            this.customer_TableDataGridView.DataSource = this.customer_TableBindingSource;
-            this.customer_TableDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.customer_TableDataGridView.Location = new System.Drawing.Point(29, 28);
-            this.customer_TableDataGridView.Name = "customer_TableDataGridView";
-            this.customer_TableDataGridView.RowTemplate.Height = 33;
-            this.customer_TableDataGridView.Size = new System.Drawing.Size(1709, 397);
-            this.customer_TableDataGridView.TabIndex = 1;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "Customer_Id";
-            this.dataGridViewTextBoxColumn1.HeaderText = "Customer_Id";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Customer_Name";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Customer_Name";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Customer_Address";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Customer_Address";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Freight_Carrier";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Freight_Carrier";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "Type_Of_Order";
-            this.dataGridViewTextBoxColumn5.HeaderText = "Type_Of_Order";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "Customer_PhoneNumber";
-            this.dataGridViewTextBoxColumn6.HeaderText = "Customer_PhoneNumber";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -318,17 +260,86 @@
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
+            // products_TableBindingSource
+            // 
+            this.products_TableBindingSource.DataMember = "Products Table";
+            this.products_TableBindingSource.DataSource = this.stocInventoryDataSet;
+            // 
+            // products_TableTableAdapter
+            // 
+            this.products_TableTableAdapter.ClearBeforeFill = true;
+            // 
+            // products_TableDataGridView
+            // 
+            this.products_TableDataGridView.AutoGenerateColumns = false;
+            this.products_TableDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.products_TableDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewCheckBoxColumn1,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5});
+            this.products_TableDataGridView.DataSource = this.products_TableBindingSource;
+            this.products_TableDataGridView.Location = new System.Drawing.Point(12, 25);
+            this.products_TableDataGridView.Name = "products_TableDataGridView";
+            this.products_TableDataGridView.RowTemplate.Height = 33;
+            this.products_TableDataGridView.Size = new System.Drawing.Size(1574, 417);
+            this.products_TableDataGridView.TabIndex = 5;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "Product_Number";
+            this.dataGridViewTextBoxColumn1.HeaderText = "Product_Number";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Product_Name";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Product_Name";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "Product_Status";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "Product_Status";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Product_Quantity";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Product_Quantity";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Product_Date";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Product_Date";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "Product-netWeight";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Product-netWeight";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
             // ProductsTBL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1810, 549);
+            this.ClientSize = new System.Drawing.Size(1624, 549);
+            this.Controls.Add(this.products_TableDataGridView);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.customer_TableDataGridView);
             this.Controls.Add(this.customer_TableBindingNavigator);
             this.Name = "ProductsTBL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -339,7 +350,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.customer_TableBindingNavigator)).EndInit();
             this.customer_TableBindingNavigator.ResumeLayout(false);
             this.customer_TableBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.customer_TableDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.products_TableBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.products_TableDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -364,17 +376,19 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.ToolStripButton customer_TableBindingNavigatorSaveItem;
-        private System.Windows.Forms.DataGridView customer_TableDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.BindingSource products_TableBindingSource;
+        private StocInventoryDataSetTableAdapters.Products_TableTableAdapter products_TableTableAdapter;
+        private System.Windows.Forms.DataGridView products_TableDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
     }
 }
 
