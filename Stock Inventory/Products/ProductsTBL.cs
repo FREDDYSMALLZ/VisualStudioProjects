@@ -56,17 +56,46 @@ namespace Products
 
         private void button4_Click(object sender, EventArgs e)
         {
-          
+            try
+            {
+                products_TableBindingSource.MoveNext(); // moves the cursor to the next item on the tsble
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                products_TableBindingSource.MovePrevious(); //Moves the cursor to the previous record on the table
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
+                MessageBox.Show("Are you sure you want to delete the record?",
+                    "Click on OK. to continue, NO not to delete the record", MessageBoxButtons.YesNo);
+                products_TableBindingSource.RemoveCurrent();// Deletes the current selected record from the table.
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error in deleting the record. Click on the record to delete.");
+            }
         }
     }
 }

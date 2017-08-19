@@ -66,11 +66,6 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="LOGINDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>LOGINDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Stock_InventoryDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -136,17 +131,6 @@
     <EmbeddedResource Include="Stock_Reports_Table.resx">
       <DependentUpon>Stock_Reports_Table.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="LOGINDataSet.xsc">
-      <DependentUpon>LOGINDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="LOGINDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>LOGINDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="LOGINDataSet.xss">
-      <DependentUpon>LOGINDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -184,13 +168,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LOGIN.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="LOGIN_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>LOGIN.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\LOGIN.png" />
     <None Include="Resources\stock-vector-auto-repair-services-black-concept-with-car-icons-and-spare-parts-in-the-garage-in-the-stretched-445194946.jpg" />
     <None Include="Resources\DSK.jpg" />
