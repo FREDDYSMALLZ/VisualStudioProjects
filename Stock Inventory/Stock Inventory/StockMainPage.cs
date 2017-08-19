@@ -1,4 +1,5 @@
 ﻿using Customer;
+using Customer_Order;
 using Freight;
 using Products;
 using Stock_Report;
@@ -370,6 +371,40 @@ namespace Stock_Inventory
             {
 
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void customerOrderToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CustomerTBL myCustomerTBL = new CustomerTBL();
+                myCustomerTBL.MdiParent = this;
+                MessageBox.Show("The Customer Oder Table was loaded Sucessfully. Please Press the Ok. Button to contonue.");
+                myCustomerTBL.Show();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void customerOrderToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                CustomerTBL myCustomerTBL = new CustomerTBL();
+                myCustomerTBL.MdiParent = this;
+                MessageBox.Show("The customer Order table was loaded sucessfully. Press OK. To contonue.");
+                myCustomerTBL.Show();
+
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error in loading the Order table. Please click on the Customer Order Tab to view Data.");
             }
         }
     }
