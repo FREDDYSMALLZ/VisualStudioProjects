@@ -15,7 +15,7 @@ namespace Chapter_3_Exercise_24
 
             Console.Write("Please Enter the Annual Inflation Rate. ");
             String input = Console.ReadLine();
-            int Annual_Inflation_Rate = int.Parse(input);
+            double Annual_Inflation_Rate = double.Parse(input);
 
             Console.Write("Please Enter the cost of the item now. ");
             String input1 = Console.ReadLine();
