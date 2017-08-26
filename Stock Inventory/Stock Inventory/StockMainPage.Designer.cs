@@ -73,8 +73,8 @@
             this.receivingDepartmentToolStripMenuItem1});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip.Size = new System.Drawing.Size(1017, 35);
+            this.menuStrip.Padding = new System.Windows.Forms.Padding(14, 4, 0, 4);
+            this.menuStrip.Size = new System.Drawing.Size(1264, 48);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -87,8 +87,9 @@
             this.stockReportsToolStripMenuItem,
             this.freightCarriersToolStripMenuItem,
             this.customerDataToolStripMenuItem});
+            this.stockDepartmentToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stockDepartmentToolStripMenuItem.Name = "stockDepartmentToolStripMenuItem";
-            this.stockDepartmentToolStripMenuItem.Size = new System.Drawing.Size(167, 29);
+            this.stockDepartmentToolStripMenuItem.Size = new System.Drawing.Size(277, 40);
             this.stockDepartmentToolStripMenuItem.Text = "Stock Department";
             // 
             // stockInventoryToolStripMenuItem
@@ -135,8 +136,9 @@
             this.stockReportsToolStripMenuItem1,
             this.freightCarrierToolStripMenuItem,
             this.customerDataToolStripMenuItem1});
+            this.receivingDepartmentToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.receivingDepartmentToolStripMenuItem.Name = "receivingDepartmentToolStripMenuItem";
-            this.receivingDepartmentToolStripMenuItem.Size = new System.Drawing.Size(198, 29);
+            this.receivingDepartmentToolStripMenuItem.Size = new System.Drawing.Size(334, 40);
             this.receivingDepartmentToolStripMenuItem.Text = "Receiving Department";
             // 
             // stockInventoryToolStripMenuItem1
@@ -184,8 +186,9 @@
             this.freightCarrierToolStripMenuItem1,
             this.customerDataToolStripMenuItem2,
             this.customerOrderToolStripMenuItem});
+            this.shippingDepartmentToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.shippingDepartmentToolStripMenuItem.Name = "shippingDepartmentToolStripMenuItem";
-            this.shippingDepartmentToolStripMenuItem.Size = new System.Drawing.Size(195, 29);
+            this.shippingDepartmentToolStripMenuItem.Size = new System.Drawing.Size(325, 40);
             this.shippingDepartmentToolStripMenuItem.Text = "Shipping Department";
             // 
             // stockInventoryToolStripMenuItem2
@@ -240,8 +243,9 @@
             this.freightCarrierToolStripMenuItem2,
             this.customerDataToolStripMenuItem3,
             this.customerOrderToolStripMenuItem1});
+            this.receivingDepartmentToolStripMenuItem1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.receivingDepartmentToolStripMenuItem1.Name = "receivingDepartmentToolStripMenuItem1";
-            this.receivingDepartmentToolStripMenuItem1.Size = new System.Drawing.Size(180, 29);
+            this.receivingDepartmentToolStripMenuItem1.Size = new System.Drawing.Size(304, 40);
             this.receivingDepartmentToolStripMenuItem1.Text = "Quality Department";
             // 
             // stockInventoryToolStripMenuItem3
@@ -292,10 +296,10 @@
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(0, 521);
+            this.statusStrip.Location = new System.Drawing.Point(0, 483);
             this.statusStrip.Name = "statusStrip";
-            this.statusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
-            this.statusStrip.Size = new System.Drawing.Size(1017, 30);
+            this.statusStrip.Padding = new System.Windows.Forms.Padding(3, 0, 33, 0);
+            this.statusStrip.Size = new System.Drawing.Size(1264, 30);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -307,23 +311,24 @@
             // 
             // StockMainPage
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 26F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::Stock_Inventory.Properties.Resources.dribbblebackground_01_1x;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1017, 551);
+            this.ClientSize = new System.Drawing.Size(1264, 513);
             this.Controls.Add(this.statusStrip);
             this.Controls.Add(this.menuStrip);
+            this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "StockMainPage";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "StockMainPage";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.StockMainPage_FormClosing);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
